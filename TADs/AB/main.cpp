@@ -34,17 +34,17 @@ int main(int argc, char** argv) {
 	if(esArbolVacio(arbol)) cout << "El arbol SI esta vacio\n";
 	else cout << "El arbol NO esta vacio\n";
 
-	cout<<"Recorrer en pre orden: ";
+	cout << "Recorrer en pre orden: ";
 	recorrerEnPreorden(arbol);
-	cout<<"Recorrer en orden: ";
+	cout << "Recorrer en orden: ";
 	recorrerEnOrden(arbol);
-	cout<<"Recorrer en post orden: ";
+	cout << "Recorrer en post orden: ";
 	recorrerEnPostorden(arbol);
 
-	cout<<"Altura del arbol: "<<altura(arbol)<<endl;
-	cout<<"Numero de hojas: "<<numeroDeHojas(arbol)<<endl;
-	cout<<"Numero de hojas: "<<numeroDeNodos(arbol)<<endl;
-	if(esEquilibrado(arbol)) cout<<"El arbol SI es equilibrado\n";
+	cout << "Altura del arbol: " << altura(arbol) << endl;
+	cout << "Numero de hojas: " << numeroDeHojas(arbol) << endl;
+	cout << "Numero de nodos: " << numeroDeNodos(arbol) << endl;
+	if(esEquilibrado(arbol)) cout << "El arbol SI es equilibrado\n";
 	else cout << "El arbol NO es equilibrado\n";
 
 	destruir(arbol);
