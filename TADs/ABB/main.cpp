@@ -24,14 +24,14 @@ int main(int argc, char** argv) {
 	insertar(arbol, 1500);
 	insertar(arbol, 150);
 
-	cout<<"Recorrer en pre orden: ";
+	cout << "Recorrer en pre orden: ";
 	recorrerEnPreorden(arbol);
-	cout<<"Recorrer en orden: ";
+	cout << "Recorrer en orden: ";
 	recorrerEnOrden(arbol);
-	cout<<"Recorrer en post orden: ";
+	cout << "Recorrer en post orden: ";
 	recorrerEnPostorden(arbol);
 
-	if(buscarDato(arbol, 100)) cout << "El elemento 201 SI se encuentra en el arbol\n";
+	if(buscarDato(arbol, 100)) cout << "El elemento 100 SI se encuentra en el arbol\n";
 	else cout << "El elemento 100 NO se encuentra en el arbol\n";
 
 	eliminarNodo(arbol, 100);
@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
 	if(buscarDato(arbol, 100)) cout << "El elemento 100 SI se encuentra en el arbol\n";
 	else cout << "El elemento 100 NO se encuentra en el arbol\n";
 
-	cout<<"Recorrer en orden: ";
+	cout << "Recorrer en orden: ";
 	recorrerEnOrden(arbol);
 
 	destruir(arbol);
